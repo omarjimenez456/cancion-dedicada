@@ -15,6 +15,8 @@ function crearCorazon() {
 
 setInterval(crearCorazon, 800);
 
+
+
 const playBtn = document.getElementById('playBtn');
 const audio = document.getElementById('audio');
 
@@ -23,11 +25,11 @@ let isPlaying = false;
 playBtn.addEventListener('click', () => {
   if (!isPlaying) {
     audio.play();
-    playBtn.textContent = "⏸ Pausar"; 
+    playBtn.textContent = "⏸ Pausar canción"; 
     isPlaying = true;
   } else {
     audio.pause();
-    playBtn.textContent = "▶ Reproducir"; 
+    playBtn.textContent = "▶ Reproducir canción"; 
     isPlaying = false;
   }
 });
